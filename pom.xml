@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.raven</groupId>
 	<artifactId>spring-boot-security-basic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>spring-boot-security-basic</name>
 	<description>Spring Boot  project to implement Security</description>
 	<properties>
@@ -45,6 +45,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>spring-boot-security-basic</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

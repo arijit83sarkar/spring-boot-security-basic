@@ -8,14 +8,11 @@ public class UserController {
 
 	@GetMapping("/myCourses")
 	public String myCourses() {
-		StringBuilder stringBuilder = new StringBuilder();
-		stringBuilder.append("Enrolled courses:");
-		stringBuilder.append("<ul>");
-		stringBuilder.append("<li>Full Stack JAVA Developer (85% completed)</li>");
-		stringBuilder.append("<li>Microservcies with Spring Boot (55 % completed)</li>");
-		stringBuilder.append("<li>Docker guide : Beginner to Master (65% completed)</li>");
-		stringBuilder.append("</ul>");
-
-		return stringBuilder.toString();
+		return "Enrolled courses:" +
+				"<ul>" +
+				"<li>Full Stack JAVA Developer (85% done)</li>" +
+				"<li>Microservices with Spring Boot (55 % done)</li>" +
+				"<li>Docker guide : Beginner to Master (65% done)</li>" +
+				"</ul>";
 	}
 }

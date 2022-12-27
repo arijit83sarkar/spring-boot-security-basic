@@ -6,21 +6,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeController {
 
+	/* @RequestMapping(value = "/welcome", method = RequestMethod.GET) */
 	@GetMapping("/welcome")
 	public String welcome() {
-		StringBuilder stringBuilder = new StringBuilder();
-		stringBuilder.append("Available courses:");
-		stringBuilder.append("<ul>");
-		stringBuilder.append("<li>Learn JAVA : Beginner to Master</li>");
-		stringBuilder.append("<li>Full Stack JAVA Developer</li>");
-		stringBuilder.append("<li>Microservcies with Spring Boot</li>");
-		stringBuilder.append("<li>Complete Web Development</li>");
-		stringBuilder.append("<li>Wordpress for Beginner</li>");
-		stringBuilder.append("<li>Complete Python Development : Beginner to Master</li>");
-		stringBuilder.append("<li>Docker guide : Beginner to Master</li>");
-		stringBuilder.append("<li>Node.js : Ultimate guide</li>");
-		stringBuilder.append("</ul>");
-		
-		return stringBuilder.toString();
+		return "Available courses:" +
+				"<ul>" +
+				"<li>Learn JAVA : Beginner to Master</li>" +
+				"<li>Full Stack JAVA Developer</li>" +
+				"<li>Microservices with Spring Boot</li>" +
+				"<li>Complete Web Development</li>" +
+				"<li>Wordpress for Beginner</li>" +
+				"<li>Complete Python Development</li>" +
+				"<li>Docker guide : Beginner to Master</li>" +
+				"<li>Node.js : Ultimate guide</li>" +
+				"</ul>";
 	}
 }
